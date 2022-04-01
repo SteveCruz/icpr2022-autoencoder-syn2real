@@ -1,0 +1,14 @@
+torch==1.8
+torchvision==0.9.0
+scikit-learn==0.24.1
+opencv-python
+Pillow
+scikit-image
+albumentations
+tqdm
+pandas
+numpy
+matplotlib
+toml
+pytorch_msssim
+lpips
