@@ -1,0 +1,25 @@
+[dataset]
+name = "seats_and_people_nocar" # specify which dataset to use: ticam, sviro, sviro_illumination, seats_and_people_nocar, mpi3d
+factor = "" # dataset variation to use: "toy" or "realistic" for mpi3d, "train" for vehicle names for the sviro datasets, e.g. "kodiaq". not used by ticam and seats_and_people_nocar
+
+[model]
+type = "extractor" # leave it like this
+variation = "" # "tae": use tae latent space constraint, leave "" to train normally
+extractor = "vgg11" # densenet121, resnet50, vgg11: which pre-trained model to use for feature extraction
+layer = -3 # which layer from the pre-trained model to use to extract the features. our paper uses -3 only
+dimension = 64 # latent space dimension
+knn = 115 # number of nearest neighbours to consider for knn classification
+activation = "ReLU" # SiLU, ELU, ReLU, GELU or any other PyTorch activation function
+
+[training]
+gpu = "0" # which GPU to use during training
+batch_size = 64
+optimizer = "AdamW" # Adam, AdamW or SGD
+learning_rate = 0.0001
+weight_decay = 1e-5
+epochs = 250
+frequency = 1 # how often to print results, check accuracy, reconstruct examples, save model
+loss = "SSIM" # reconstruction loss: SSIM, BCE, MSE, L1
+augment = false # perform data augmentation during training
+make_scene_impossible = false # use partially impossible loss during training, reconstruction to same scene under different variation.
+make_instance_impossible = false # use partially impossible loss during training, reconstruction different class instance. if this is true, pirl_impossible is ignored

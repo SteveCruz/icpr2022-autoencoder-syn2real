@@ -1,0 +1,21 @@
+[dataset]
+name = "seats_and_people_nocar" # specify which dataset to use: ticam, sviro, sviro_illumination, seats_and_people_nocar, mpi3d
+factor = "" # dataset variation to use: "toy" or "realistic" for mpi3d, "train" for vehicle names for the sviro datasets, e.g. "kodiaq". not used by ticam and seats_and_people_nocar
+
+[model]
+type = "classification" # leave it like this
+variation = "" # we do not need this for classification
+architecture = "vgg11" # resnet50, vgg11, densenet121: which pre-trained model to fine-tune or train from scratch
+use_pretrained = true # whether we want to use the pre-trained weights or train from scratch
+freeze_n_first_layers = 14 # resnet50: 129, vgg11: 14, densenet121: 261 - define how many layers to freeze during training
+
+[training]
+gpu = "0" # which GPU to use during training
+batch_size = 64
+optimizer = "AdamW" # Adam, AdamW or SGD
+learning_rate = 0.0001
+weight_decay = 1e-5
+epochs = 250
+frequency = 1 # how often to print results, check accuracy, reconstruct examples, save model
+augment = false # perform data augmentation during training
+
