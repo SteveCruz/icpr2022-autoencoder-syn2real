@@ -1,6 +1,6 @@
 # Autoencoder for Synthetic to Real Generalization: From Simple to More Complex Scenes
 
-This repository is the official PyTorch implementation of [Autoencoder for Synthetic to Real Generalization: From Simple to More Complex Scenes](https://www.icpr2022.com/). 
+This repository is the official PyTorch implementation of [Autoencoder for Synthetic to Real Generalization: From Simple to More Complex Scenes](https://sviro.kl.dfki.de/). 
 
 ![alt text](graphics/architecture.png "Title")
 
@@ -8,9 +8,12 @@ This repository is the official PyTorch implementation of [Autoencoder for Synth
 If you want to cite our work, please use the following bibtex entry:
 
 ```
-@article{
-  TBC
-}
+@INPROCEEDINGS{DiasDaCruz2022Syn2real,
+  author = {Steve {Dias Da Cruz} and Bertram Taetz and Thomas Stifter and Didier Stricker},
+  title = {Autoencoder for Synthetic to Real Generalization: From Simple to More Complex Scenes},
+  booktitle = {Proceedings of the IEEE International Conference on Pattern Recognition (ICPR)},
+  year = {2022}
+} 
 ```
 
 ## Requirements
