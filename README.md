@@ -154,7 +154,7 @@ Further, we provide also pre-trained weights when trained on other datasets, whi
 
 | Variant                      | Training dataset             | Download link                                                                              |
 |----------------------------- | -----------------------------| ------------------------------------------------------------------------------------------ |
-| AE, E-AE, VAE, $\beta$-VAE and FactorVAE               | MPI3D                        | [link](https://sviro.kl.dfki.de/download/mpi3d/?wpdmdl=2003&refresh=6243007f931491648558207) |
+| AE, E-AE, VAE, β-VAE and FactorVAE               | MPI3D                        | [link](https://sviro.kl.dfki.de/download/mpi3d/?wpdmdl=2003&refresh=6243007f931491648558207) |
 | E-AE, I-AE                   | SVIRO and SVIRO-Illumination | [link](https://sviro.kl.dfki.de/download/sviro/?wpdmdl=2004&refresh=624300a4204131648558244) |
 
 
