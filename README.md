@@ -176,4 +176,4 @@ All contributions welcome! All content in this repository is licensed under the 
 
 ## Acknowledgment
 
-The first author is supported by the Luxembourg National Research Fund (FNR) under grant number 13043281. The second author is supported by DECODE (grant number 01IW21001). This work was partially funded by the Luxembourg Ministry of the Economy (CVN 18/18/RED)
+Steve Dias Da Cruz and the work presented in this repository were supported by the Luxembourg National Research Fund (FNR) under grant number 13043281. This work was partially funded by the Luxembourg Ministry of the Economy (CVN 18/18/RED).
